@@ -103,5 +103,21 @@ $(document).ready(function() {
         offset: '100%',
         triggerOnce: true
     });
+    // Social button hide/show on the page right side
+    $('#service-sec').waypoint(function(direction) {
+        if (direction == 'down') {
+            $(".social-button").css("transform", "translate(0%, -50%)")
+        } else {
+            $(".social-button").css("transform", "translate(100%, -50%)")
+        }
+    });
+    // messenger icon zoom in/out
+    $('#service-sec').waypoint(function(direction) {
+        if (direction == 'down') {
+            $(".messenger-icon").css("transform", "scale(1)")
+        } else {
+            $(".messenger-icon").css("transform", "scale(0)")
+        }
+    });
 
 });

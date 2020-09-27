@@ -1189,6 +1189,9 @@ svg.radial-progress text {
     .plan-card {
         width: 70%;
     }
+    nav {
+        padding: 0;
+    }
 }
 
 @media screen and (max-width: 576px) {
